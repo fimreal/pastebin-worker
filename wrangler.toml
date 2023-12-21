@@ -1,15 +1,15 @@
 name= "pastebin-worker"
 compatibility_date = "2023-11-28"
-account_id= "516d0a360ccdea88dd79e9cf5d2bc3aa"
+account_id= "45148885bc21362086394801ab3f2a45"
 main = "src/index.ts"
 workers_dev = false
 
 vars = { ENVIRONMENT = "production" }
-route = { pattern = "pastes.551111.xyz", custom_domain = true }
+route = { pattern = "paste.2fw.top", custom_domain = true }
 
 kv_namespaces = [
-  { binding = "PB", id = "85ce3453c9f942a6900a5e9e4cdd34e7" },
-  { binding = "PBIMGS", id ="2716bc3deb2744f695f06e5d61e6cfc5" }
+  { binding = "pastebin", id = "a8adff9f522b43bd980658054769a1b7" },
+  { binding = "pastebin-img", id ="602ccc639a6b40c7a0719dec6a59a260" }
 ]
 
 [site]
