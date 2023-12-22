@@ -8,8 +8,8 @@ vars = { ENVIRONMENT = "production" }
 route = { pattern = "paste.2fw.top", custom_domain = true }
 
 kv_namespaces = [
-  { binding = "pastebin", id = "a8adff9f522b43bd980658054769a1b7" },
-  { binding = "pastebin-img", id ="602ccc639a6b40c7a0719dec6a59a260" }
+  { binding = "PB", id = "f350a15f1b0043ac9797e7eeefa2cc84" },
+  { binding = "PBIMGS", id ="2fc8de5cb16449c3a328e72283536900" }
 ]
 
 [site]
