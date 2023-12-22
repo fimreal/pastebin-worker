@@ -122,7 +122,7 @@ app.post('/api/upload', async (c) => {
   await c.env.PBIMGS.put(id, await file.arrayBuffer(), {
     expirationTtl: 60 * 60 * 24,
     metadata: {
-      mineType: file.type,
+      mineType: file.type || 'application/octet-stream',
       name: file.name,
     },
   });
