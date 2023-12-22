@@ -5,9 +5,24 @@ export default function Turorial() {
       <p>本网站是基于 cloudflare worker 实现的文字和文件分享工具。</p>
       <h2>命令行使用</h2>
 
+      <h4>上传 raw 内容</h4>
       <pre
         dangerouslySetInnerHTML={{
-          __html: `curl 'https://pastes.2fw.top/api/create' --data-raw '{"content":"123123","expire":60,"isPrivate":true}'`,
+          __html: `curl https://paste.2fw.top/api/create --data-raw '{"content":"内容","expire":过期时间(s),"isPrivate":true}'`,
+        }}
+      ></pre>
+
+      <h4>上传文件</h4>
+      <pre
+        dangerouslySetInnerHTML={{
+          __html: `curl https://paste.2fw.top/api/upload -F "file=@/path/to/file"`,
+        }}
+      ></pre>
+
+      <h4>获取 raw 内容</h4>
+      <pre
+        dangerouslySetInnerHTML={{
+          __html: `curl https://paste.2fw.top/raw/{id}"`,
         }}
       ></pre>
 
