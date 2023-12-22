@@ -104,7 +104,7 @@ app.get('/api/get', async (c) => {
 });
 
 // 列出所有paste的key
-app.get('/api/list', async (c) => {
+app.get('/api/C83E4B87-FDC5-40F8-991D-9CA0DCDC65A4/list', async (c) => {
   const keys = await c.env.PB.list();
   return c.json(keys);
 });
